@@ -1,0 +1,217 @@
+# Christian Audience Intelligence — Search Terms
+#
+# Each term maps to a category and one or more sources.
+# seasonal: true  = exclude from "emerging" detection (spikes every year by calendar)
+# anchor: true    = used as normalization baseline in Google Trends batches (do not remove)
+#
+# Sources: google_trends | youtube | both
+
+anchor_terms:
+  - term: "bible"
+    anchor: true
+    category: spiritual_growth
+    source: both
+
+categories:
+
+  israel_jewish_interest:
+    - term: "Israel war"
+      source: google_trends
+    - term: "Israel prophecy"
+      source: both
+    - term: "Jewish Christians"
+      source: both
+    - term: "Israel end times"
+      source: both
+    - term: "Christian support Israel"
+      source: both
+    - term: "antisemitism Christians"
+      source: both
+    - term: "Messianic Jewish"
+      source: both
+    - term: "Gaza Christians"
+      source: google_trends
+
+  bible_prophecy:
+    - term: "end times signs"
+      source: both
+    - term: "rapture"
+      source: both
+    - term: "second coming Jesus"
+      source: both
+    - term: "book of Revelation explained"
+      source: both
+    - term: "Daniel prophecy"
+      source: both
+    - term: "tribulation"
+      source: both
+    - term: "mark of the beast"
+      source: both
+    - term: "antichrist"
+      source: both
+
+  theology_apologetics:
+    - term: "Christian apologetics"
+      source: both
+    - term: "is the Bible true"
+      source: google_trends
+    - term: "proof of God"
+      source: google_trends
+    - term: "Christianity vs atheism"
+      source: both
+    - term: "Christian theology"
+      source: both
+    - term: "heresy church"
+      source: both
+    - term: "Jesus historical evidence"
+      source: both
+    - term: "biblical inerrancy"
+      source: youtube
+
+  spiritual_growth:
+    - term: "how to pray"
+      source: google_trends
+    - term: "Bible reading plan"
+      source: both
+    - term: "Christian fasting"
+      source: both
+    - term: "hearing from God"
+      source: both
+    - term: "Christian meditation"
+      source: both
+    - term: "spiritual warfare"
+      source: both
+    - term: "Holy Spirit"
+      source: both
+    - term: "sanctification"
+      source: youtube
+
+  evangelism:
+    - term: "how to share your faith"
+      source: both
+    - term: "Christian witness"
+      source: both
+    - term: "street evangelism"
+      source: youtube
+    - term: "evangelism training"
+      source: both
+    - term: "gospel presentation"
+      source: both
+    - term: "how to evangelize"
+      source: both
+
+  christian_parenting:
+    - term: "Christian parenting"
+      source: both
+    - term: "raising kids in faith"
+      source: both
+    - term: "children Bible lessons"
+      source: both
+    - term: "Christian homeschool"
+      source: both
+    - term: "faith and children"
+      source: both
+    - term: "youth ministry"
+      source: both
+
+  marriage_family:
+    - term: "Christian marriage"
+      source: both
+    - term: "biblical marriage"
+      source: both
+    - term: "Christian divorce"
+      source: both
+    - term: "marriage counseling Christian"
+      source: both
+    - term: "Christian dating"
+      source: both
+    - term: "godly relationship"
+      source: both
+
+  anxiety_suffering_mental_health:
+    - term: "Christian anxiety"
+      source: both
+    - term: "Bible verses anxiety"
+      source: google_trends
+    - term: "Christian depression"
+      source: both
+    - term: "suffering and faith"
+      source: both
+    - term: "why does God allow suffering"
+      source: both
+    - term: "Christian mental health"
+      source: both
+    - term: "grief and God"
+      source: both
+    - term: "fear and faith"
+      source: both
+
+  current_events_christian_lens:
+    - term: "Christian response to politics"
+      source: both
+    - term: "Christian news"
+      source: both
+    - term: "Bible and current events"
+      source: both
+    - term: "Christians and government"
+      source: both
+    - term: "Christian worldview news"
+      source: both
+    - term: "America and Christianity"
+      source: both
+
+  church_discipleship:
+    - term: "church leaving"
+      source: both
+    - term: "discipleship"
+      source: both
+    - term: "small group Bible study"
+      source: both
+    - term: "church growth"
+      source: both
+    - term: "find a church"
+      source: google_trends
+    - term: "church hurt"
+      source: both
+    - term: "deconstructing faith"
+      source: both
+    - term: "church community"
+      source: both
+
+  cultural_issues:
+    - term: "Christians and gender"
+      source: both
+    - term: "Christianity and abortion"
+      source: both
+    - term: "Christians and LGBT"
+      source: both
+    - term: "Christian response to culture"
+      source: both
+    - term: "biblical sexuality"
+      source: both
+    - term: "Christian and AI"
+      source: both
+    - term: "religious freedom America"
+      source: both
+
+  antisemitism_persecution:
+    - term: "Christian persecution"
+      source: both
+    - term: "antisemitism rise"
+      source: google_trends
+    - term: "Christians persecuted"
+      source: both
+    - term: "religious persecution"
+      source: both
+    - term: "church attacked"
+      source: google_trends
+    - term: "Christianity under attack"
+      source: both
+
+seasonal_exclusions:
+  - "Christmas"
+  - "Easter"
+  - "Good Friday"
+  - "Lent"
+  - "Advent"
+  - "Thanksgiving Christian"
